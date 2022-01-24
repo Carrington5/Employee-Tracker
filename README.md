@@ -16,7 +16,7 @@
   Install node, and run this in Command Line.
 
   ## Usage
-  If you manage a small company with several departments, roles, and employees, this tool could help you track your employee information in an organized databse with a simple command line interface.
+  If you manage a small company with several departments, roles, and employees, this app for you! track your employee information in an organized databse with a simple command very simple command line interface
 
 
   ## Contributions
