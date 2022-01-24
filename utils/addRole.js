@@ -7,10 +7,10 @@ function addRole(questions) {
     let deptList = Db.departmentList().then(([data]) => {
         data.map(element => (
             deptArr.push(
-            {
-                name: element.name,
-            }
-        )))
+                {
+                    name: element.name,
+                }
+            )))
     })
     inquire.prompt([{
         type: 'input',
@@ -28,8 +28,8 @@ function addRole(questions) {
         message: 'What department does this role under?',
         choices: deptArr
     }
-]).then(answer => {
-        Db.addRole(answer.title, answer.salary, answer.department);  
+    ]).then(answer => {
+        Db.addRole(answer.title, answer.salary, answer.department);
     }).then(() => questions());
 };
 
