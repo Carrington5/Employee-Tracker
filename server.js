@@ -3,7 +3,7 @@ const consoleTable = require('console.table');
 const inquire = require('inquirer');
 const actions = require('./utils/index');
 
-const questions = function() {
+const questions = function () {
     inquire.prompt([
         {
             type: 'list',
@@ -41,7 +41,7 @@ const questions = function() {
                 value: 'removeDept'
             }]
         }
-    ]) .then(({initialChoice}) => {
+    ]).then(({ initialChoice }) => {
         if (initialChoice === 'viewDept') actions.viewDept(questions);
         else if (initialChoice === 'viewRoles') actions.viewRoles(questions);
         else if (initialChoice === 'viewEmployees') actions.viewEmployees(questions);
