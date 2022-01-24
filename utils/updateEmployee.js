@@ -7,19 +7,19 @@ function updateEmployee(questions) {
     let empList = Db.employeeList().then(([data]) => {
         data.map(element => (
             empArr.push(
-            {
-                name: element.employee_name,
-            }
-        )))
+                {
+                    name: element.employee_name,
+                }
+            )))
     })
     let roleArr = [];
     let roleList = Db.roleList().then(([data]) => {
         data.map(element => (
             roleArr.push(
-            {
-                name: element.title,
-            }
-        )))
+                {
+                    name: element.title,
+                }
+            )))
     })
     inquire.prompt([
         {
