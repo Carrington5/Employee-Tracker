@@ -8,7 +8,7 @@ function addDept(questions) {
         name: 'name',
         message: 'What is the department name?'
     }).then(answer => {
-        Db.addDepartment(answer);  
+        Db.addDepartment(answer);
     }).then(() => questions());
 };
 
