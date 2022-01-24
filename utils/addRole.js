@@ -15,7 +15,7 @@ function addRole(questions) {
     inquire.prompt([{
         type: 'input',
         name: 'title',
-        message: "What is the new role called?"
+        message: "What is the new role ?"
     },
     {
         type: 'input',
@@ -25,7 +25,7 @@ function addRole(questions) {
     {
         type: 'list',
         name: 'department',
-        message: 'What department does this role fall under?',
+        message: 'What department does this role under?',
         choices: deptArr
     }
 ]).then(answer => {
